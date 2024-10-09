@@ -46,7 +46,7 @@ This is a simple and stylish **To-Do List** web application built using **Flask*
 
 ## Project Structure
 
-📂 todo-flask-app<br>
+📂 Todo<br>
 ├── 📂 static<br>
 │ ├── 📄 style.css<br>
 ├── 📂 templates<br>
