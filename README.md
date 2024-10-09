@@ -66,13 +66,6 @@ This is a simple and stylish **To-Do List** web application built using **Flask*
 - **JavaScript**: For dynamic elements.
 - **SQLite**: For task storage (optional if using a database).
 
-## Future Enhancements
-
-- **User Authentication**: Enable user login and registration for personalized task lists.
-- **Task Deadlines**: Add a feature to assign deadlines to tasks.
-- **Categories/Tags**: Organize tasks by category or add tags for better task management.
-- **Persistent Storage**: Replace in-memory data with a database like SQLite or PostgreSQL.
-
 ## Contributing
 
 Contributions are welcome! Please follow these steps:
