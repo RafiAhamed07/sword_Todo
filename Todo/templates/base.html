@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}To-Do List{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1 class="title">To-Do List</h1>
+    </header>
+
+    <div class="container">
+        {% block content %} {% endblock %}
+    </div>
+
+    <footer>
+        <p>© 2024 ToDo. All rights reserved by Rafi Ahamed.</p>
+        <p>Contact Me:</p>
+        <p>
+            <a href="mailto:fidaahamed16@gmail.com" class="footer-link">Email</a> |
+            <a href="https://rafiahamed.netlify.app/www.linkedin.com/in/rafi--ahamed" class="footer-link" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/RafiAhamed07" class="footer-link" target="_blank">Github</a>
+        </p>
+    </footer>
+
+</body>
+</html>

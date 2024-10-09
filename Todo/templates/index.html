@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <div class="task-container">
+        <form action="/add" method="post" class="task-form">
+            <input type="text" name="new_task" placeholder="Add a new task" required>
+            <button type="submit" class="btn">Add Task</button>
+        </form>
+
+        <ul class="task-list">
+            {% for task in tasks %}
+                <li class="task-item {% if task.completed %}completed{% endif %}">
+                    {{ task.name }}
+                    <div class="task-buttons">
+                        {% if not task.completed %}
+                            <a href="/done/{{ loop.index0 }}" class="done-btn">Done</a>
+                        {% endif %}
+                        <a href="/update/{{ loop.index0 }}" class="edit-btn">Edit</a>
+                        <a href="/delete/{{ loop.index0 }}" class="delete-btn">Delete</a>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}
